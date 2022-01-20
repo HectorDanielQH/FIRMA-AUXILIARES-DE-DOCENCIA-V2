@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="estilo_registro.css">
+</head>
+<body>
+    <form action="../logs_php/login.php" method="POST">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <br>
+        <input type="submit" value="ENVIAR">
+    </form>
+    <br>
+    <h3>TAM. DE LINEA</h3>
+    <input type="range" id="grosor" oninput="fgrosor(this.value);" min="1" max="5" value="1">
+    <input type="button" id="Borrar" value="BORRAR">
+    <script src="logica.js"></script>
+</body>
+</html>
